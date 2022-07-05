@@ -1,0 +1,16 @@
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.AssemblyReference.cache
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MainWindow.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\App.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews_MarkupCompile.cache
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews_MarkupCompile.lref
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\game_reviews.exe.config
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\game_reviews.exe
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\game_reviews.pdb
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MainWindow.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.g.resources
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.Properties.Resources.resources
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.GenerateResource.cache
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.exe
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.pdb
