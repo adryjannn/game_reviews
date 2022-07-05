@@ -27,7 +27,28 @@ namespace game_reviews
 
         private void btnSubmitLogin_Click(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine(password.Password.ToString());
+            Console.WriteLine(username.Text);
+            GameReviewsEntities db = new GameReviewsEntities();
+            var users = (from d in db.Users
+                         where d.login == username.Text && d.password == password.Password
+                         select d).Count();
 
+
+            if (users == 1)
+            {
+                MenuWindow menu = new MenuWindow();
+                menu.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Login albo hasło niepoprawne");
+            }
+            
+
+           
+            
         }
     }
 }

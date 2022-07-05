@@ -14,3 +14,11 @@ C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\ga
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.CoreCompileInputs.cache
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.exe
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.pdb
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\EntityFramework.dll
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\EntityFramework.xml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews_Content.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.CopyComplete
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MenuWindow.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MenuWindow.baml
