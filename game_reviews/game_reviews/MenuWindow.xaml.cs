@@ -23,5 +23,26 @@ namespace game_reviews
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void ButtonClickGameList(object sender, RoutedEventArgs e)
+        {
+            MainMenuWindow.Content = new GameList();
+        }
+
+        private void ButtonClickAddGame(object sender, RoutedEventArgs e)
+        {
+            MainMenuWindow.Content = new AddGame();
+        }
+
+        private void MainMenuWindow_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
+        }
+
     }
 }

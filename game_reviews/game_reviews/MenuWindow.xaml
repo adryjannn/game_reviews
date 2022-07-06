@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="MenuWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="96" Margin="34,39,0,0" VerticalAlignment="Top" Width="99"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="35">
+            <Button Content="Game List" MinWidth="100" Click="ButtonClickGameList"></Button>
+            <Button Content="Add Game" Margin="10,0,0,0" MinWidth="100" Click="ButtonClickAddGame"></Button>
+        </StackPanel>
+        <Frame x:Name="MainMenuWindow" Margin="0,0,35,0" Navigated="MainMenuWindow_Navigated"/>
 
     </Grid>
 </Window>

@@ -64,8 +64,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddGame.xaml.cs">
+      <DependentUpon>AddGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Categories.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GameList.xaml.cs">
+      <DependentUpon>GameList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Games.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -87,6 +93,14 @@
     <Compile Include="Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="AddGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
