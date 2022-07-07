@@ -23,6 +23,12 @@ namespace game_reviews
         public GameList()
         {
             InitializeComponent();
+            GameReviewsEntities db = new GameReviewsEntities();
+            var games = from d in db.Games
+                        select d;
+
+            gameList.ItemsSource = games.ToList();
+            
         }
     }
 }

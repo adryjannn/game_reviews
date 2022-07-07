@@ -19,9 +19,11 @@ namespace game_reviews
     /// </summary>
     public partial class MenuWindow : Window
     {
-        public MenuWindow()
+        public int UserID;
+        public MenuWindow(int userID)
         {
             InitializeComponent();
+            UserID = userID;   
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,6 +33,7 @@ namespace game_reviews
 
         private void ButtonClickGameList(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine(this.UserID);
             MainMenuWindow.Content = new GameList();
         }
 

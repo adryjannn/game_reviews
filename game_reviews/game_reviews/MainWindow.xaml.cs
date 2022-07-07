@@ -20,6 +20,7 @@ namespace game_reviews
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         public MainWindow()
         {
             InitializeComponent();
@@ -30,14 +31,19 @@ namespace game_reviews
             Console.WriteLine(password.Password.ToString());
             Console.WriteLine(username.Text);
             GameReviewsEntities db = new GameReviewsEntities();
-            var users = (from d in db.Users
-                         where d.login == username.Text && d.password == password.Password
-                         select d).Count();
+            
 
+            var users = from d in db.Users
+                        where d.login == username.Text && d.password == password.Password
+                        select d;
 
-            if (users == 1)
+            var result = users.FirstOrDefault<Users>();
+
+            
+
+            if (result != null)
             {
-                MenuWindow menu = new MenuWindow();
+                MenuWindow menu = new MenuWindow(result.ID);
                 menu.Show();
                 this.Close();
             }
@@ -47,8 +53,6 @@ namespace game_reviews
             }
             
 
-           
-            
         }
     }
 }

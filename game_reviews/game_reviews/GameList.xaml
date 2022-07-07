@@ -9,6 +9,19 @@
       Title="GameList">
 
     <Grid>
-        <TextBlock Text="Game List" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontFamily="Arial Black" Foreground="#FFF90808"></TextBlock>
+        <DataGrid Name="gameList" HorizontalAlignment="Center"
+            Height="135"
+            Margin="0,200,0,0"
+            VerticalAlignment="Top"
+            Width="450"
+            FrozenColumnCount="4"
+            SelectionMode="Single" 
+            AlternatingRowBackground="#576E66"
+            HorizontalScrollBarVisibility="Disabled"
+            VerticalScrollBarVisibility="Auto"
+            MinColumnWidth="100"
+            IsReadOnly="True"/>
+        
     </Grid>
+    
 </Page>
