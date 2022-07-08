@@ -3,15 +3,83 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ViewModel="clr-namespace:game_reviews.MVVM.ViewModel"
         xmlns:local="clr-namespace:game_reviews"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="35">
-            <Button Content="Game List" MinWidth="100" Click="ButtonClickGameList"></Button>
-            <Button Content="Add Game" Margin="10,0,0,0" MinWidth="100" Click="ButtonClickAddGame"></Button>
-        </StackPanel>
-        <Frame x:Name="MainMenuWindow" Margin="0,0,35,0" Navigated="MainMenuWindow_Navigated"/>
+         Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        >
+    <Window.DataContext>
+        <ViewModel:MainViewModel/>
+    </Window.DataContext>
+    
+    <Border Background="#272533"
+            CornerRadius="15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="GamesReviews"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                       FontSize="25"
+                       Foreground="Aquamarine"
+                       FontFamily="/Fonts/#Poppins">
+            </TextBlock>
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}"/>
+                
+                <RadioButton Content="Game List"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding GameListsCommand}"/>
+                
+                <RadioButton Content="Reviews"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding ReviewViewCommand}"/>
+                
+            </StackPanel>
+            
+            <TextBlock Grid.Column="1" Text="Zalogowany użytkownik,  jakiś tekst lub img - nie mam pomysłu"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="15"
+                       FontWeight="Black"
+                       Foreground="Aquamarine"
+                       FontFamily="/Fonts/#Poppins"/>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}">
+               
+            </ContentControl>
+        </Grid>
+
+        
+        
+    </Border>
+    
+   
 </Window>

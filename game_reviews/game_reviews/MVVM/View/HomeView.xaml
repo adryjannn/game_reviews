@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="game_reviews.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:game_reviews.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Discover and share your opinion"
+                   Foreground="Aquamarine"
+                   FontSize="26"
+                   HorizontalAlignment="Left"
+                   Margin="10,0,0,10"
+                   FontFamily="/Fonts/#Poppins"/>
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <Border Height="200" Width="400" Margin="5,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#088cfc" Offset="0.0"/>
+                        <GradientStop Color="#f88cfc" Offset="1.2"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="13"
+                                       RadiusY="13"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Check what others&#x0a;think about these games"
+                                   Foreground="White"
+                                   FontSize="19"
+                                   Margin="20,18,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
+
+                    </StackPanel>
+                    <Image Source="/Images/gry.jpeg" Margin="55,56,-70,-130" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="415">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-27.081"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    
+                </Grid>
+            </Border>
+
+            <Border Width="250"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="40,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                        <GradientStop Color="#088cfc" Offset="0.0"/>
+                        <GradientStop Color="#f88cfc" Offset="1.3"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                <TextBlock Text="Contact us&#x0a;games_reviews@mail.com"
+                                   Foreground="White"
+                                   FontSize="17"
+                                   Margin="10,18,0,0"
+                           FontFamily="/Fonts/#Poppins"/>
+                    <Image Source="/Images/email.png" Margin="49,74,58,10"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+        <Image Source="/Images/wel.png" VerticalAlignment="Bottom" Height="200"/>
+    </StackPanel>
+
+</UserControl>

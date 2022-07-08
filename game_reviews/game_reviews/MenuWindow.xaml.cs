@@ -31,16 +31,6 @@ namespace game_reviews
            
         }
 
-        private void ButtonClickGameList(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine(this.UserID);
-            MainMenuWindow.Content = new GameList();
-        }
-
-        private void ButtonClickAddGame(object sender, RoutedEventArgs e)
-        {
-            MainMenuWindow.Content = new AddGame();
-        }
 
         private void MainMenuWindow_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
         {

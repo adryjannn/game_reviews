@@ -13,22 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace game_reviews
+namespace game_reviews.MVVM.View
 {
     /// <summary>
-    /// Logika interakcji dla klasy GameList.xaml
+    /// Logika interakcji dla klasy HomeView.xaml
     /// </summary>
-    public partial class GameList : Page
+    public partial class HomeView : UserControl
     {
-        public GameList()
+        public HomeView()
         {
             InitializeComponent();
-            GameReviewsEntities db = new GameReviewsEntities();
-            var games = from d in db.Games
-                        select d;
-
-            gameList.ItemsSource = games.ToList();
-            
         }
     }
 }
