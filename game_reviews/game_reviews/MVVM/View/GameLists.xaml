@@ -6,20 +6,53 @@
              xmlns:local="clr-namespace:game_reviews.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <DataGrid x:Name="gameList" HorizontalAlignment="Center"
-            Height="329"
-            Margin="67,84,71,0"
-            VerticalAlignment="Top"
-            Width="662"
-            FrozenColumnCount="4"
-            SelectionMode="Single" 
-            AlternatingRowBackground="#576E66"
-            HorizontalScrollBarVisibility="Disabled"
-            VerticalScrollBarVisibility="Auto"
-            MinColumnWidth="100"
-            IsReadOnly="True"
-                  Background="#1d3959"/>
+    
+    <StackPanel VerticalAlignment="Center">
+        <Border Height="400" Width="700"   >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                    <GradientStop Color="#272533" Offset="0.1"/>
+                    <GradientStop Color="#FF2BBF90" Offset="1.3"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.Clip>
+                <RectangleGeometry RadiusX="13"
+                                       RadiusY="13"
+                                       Rect="0,0,700,400"/>
+            </Border.Clip>
+           
 
-    </Grid>
+            <Grid>
+                <DataGrid x:Name="gameList" HorizontalAlignment="Center"
+                         Margin="0,20,0,0"
+                    Height="350"
+                    VerticalAlignment="Top"
+                    Width="650"
+                    FrozenColumnCount="4"
+                    SelectionMode="Single"
+                    HorizontalScrollBarVisibility="Auto"
+                    VerticalScrollBarVisibility="Auto"
+                    MinColumnWidth="80"
+                    IsReadOnly="True"
+                    Foreground="#FFCFCFCF"
+                    RowBackground="#272533"
+                    VerticalGridLinesBrush="Aquamarine"
+                    
+                          
+                          
+                    
+                    FontFamily="/game_reviews;component/Fonts/#Poppins"
+                    Background="#FF242230" AreRowDetailsFrozen="True" BorderBrush="#272533" GridLinesVisibility="Vertical"
+                          />
+                
+
+            </Grid>
+
+
+
+
+        </Border>
+
+    </StackPanel>
+
 </UserControl>

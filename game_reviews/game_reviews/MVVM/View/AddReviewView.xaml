@@ -6,18 +6,45 @@
              xmlns:local="clr-namespace:game_reviews.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="Review" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" Foreground="Aquamarine" Margin="0,35,0,0"></TextBlock>
-        <ComboBox Margin="46,115,414,315" Name="selectGameCBox" BorderBrush="#FF842121" SelectedValuePath="Id" DisplayMemberPath="Value">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1">
-                    <GradientStop Color="#FFF0F0F0"/>
-                    <GradientStop Color="#FFC71C1C" Offset="1"/>
+    <StackPanel VerticalAlignment="Center">
+        <TextBlock Text="Leave your opinion about game" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="Aquamarine" Margin="0,27,0,0" FontFamily="/game_reviews;component/Fonts/#Poppins"></TextBlock>
+        <Border Height="400" Width="700" >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                    <GradientStop Color="#272533" Offset="0.1"/>
+                    <GradientStop Color="#FF2BBF90" Offset="1.3"/>
                 </LinearGradientBrush>
-            </ComboBox.Background>
-        </ComboBox>
-        <TextBox Margin="46,304,414,71" Name="gameReviewGrade" Text="grade"/>
-        <TextBox Margin="46,190,414,239" Name="gameReviewContent" Text="comment"/>
-        <Button Name="btnSubmit" Content="Dodaj" Click="btnAddReview_Click" Margin="478,172,137,231"></Button>
-    </Grid>
+            </Border.Background>
+            <Border.Clip>
+                <RectangleGeometry RadiusX="13"
+                                       RadiusY="13"
+                                       Rect="0,0,700,400"/>
+            </Border.Clip>
+
+
+            <Grid>
+
+                <ComboBox Margin="230,90,230,287" x:Name="selectGameCBox" BorderBrush="#FF020202" SelectedValuePath="Id" DisplayMemberPath="Value" FontFamily="/game_reviews;component/Fonts/#Poppins">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF9C4F4F" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <TextBox  x:Name="gameReviewGrade" Text="grade" Margin="430,123,230,199" FontFamily="/game_reviews;component/Fonts/#Poppins" Background="#272533"  Foreground="Aquamarine" TextAlignment="Center"/>
+                <TextBox  x:Name="gameReviewContent" Text="comment" RenderTransformOrigin="-1.25,1.281" Margin="230,123,275,199" FontFamily="/game_reviews;component/Fonts/#Poppins" Background="#272533" Foreground="Aquamarine" TextAlignment="Center"/>
+                <Button x:Name="btnSubmit" Content="Add" Click="btnAddReview_Click" Height="30" Margin="230,218,230,152" Background="#272533" Foreground="Aquamarine" FontFamily="/game_reviews;component/Fonts/#Poppins" 
+                        FontSize="13"/>
+                <Image Source="/Images/ps.png" Margin="252,248,230,-20"/>
+
+
+            </Grid>
+
+
+
+
+        </Border>
+
+    </StackPanel>
 </UserControl>

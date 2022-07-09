@@ -66,19 +66,13 @@
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding AddReviewViewCommand}"/>
 
-                <RadioButton Content="Show review"
-                             Height="55"
-                             Foreground="Aquamarine"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                              Command="{Binding AddReviewViewCommand}"/>
 
                 <RadioButton Content="Show your review"
                              Height="55"
                              Foreground="Aquamarine"
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}"
-                              Command="{Binding AddReviewViewCommand}"/>
+                              Command="{Binding ShowReviewViewCommand}"/>
 
             </StackPanel>
             

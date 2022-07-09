@@ -11,14 +11,15 @@ namespace game_reviews.MVVM.ViewModel
 
         public RelayCommand ReviewViewCommand { get; set; }
         public RelayCommand AddReviewViewCommand { get; set; }
+        public RelayCommand ShowReviewViewCommand { get; set; }
 
-      
+
 
         public HomeViewModel HomeVM { get; set; }
         public GameListsModel GameLM { get; set; }
         public ReviewViewModel ReviewVM { get; set; }
         public AddReviewModel AddReviewVM { get; set; }
-        public AddReviewModel ShowReviewVM { get; set; }
+        public ShowReviewModel ShowReviewVM { get; set; }
 
         private object _currentView;
 
@@ -38,6 +39,7 @@ namespace game_reviews.MVVM.ViewModel
             GameLM = new GameListsModel();
             ReviewVM = new ReviewViewModel();
             AddReviewVM = new AddReviewModel();
+            ShowReviewVM = new ShowReviewModel();
             
 
             CurrentView = HomeVM;
@@ -62,7 +64,12 @@ namespace game_reviews.MVVM.ViewModel
                 CurrentView = AddReviewVM;
             });
 
-          
+            ShowReviewViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = ShowReviewVM;
+            });
+
+
         }
     }
 }
