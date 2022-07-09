@@ -23,6 +23,37 @@ namespace game_reviews.MVVM.View
         public ReviewView()
         {
             InitializeComponent();
+            GameReviewsEntities db = new GameReviewsEntities();
+            var games = from d in db.Games
+                        select d;
+            List<ComboData> ListData = new List<ComboData>();
+            foreach (var game in games)
+            {
+                ComboData data = new ComboData();
+                data.Id = game.ID;
+                data.Value = game.Title;
+                ListData.Add(data);
+            }
+
+            selectGameCBox.ItemsSource = ListData;
+        }
+
+        private void selectGameBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var game = selectGameCBox.Text;
+            GameReviewsEntities db = new GameReviewsEntities();
+
+            var gameId = from d in db.Games
+                         where d.Title == game
+                         select d;
+
+            var result = gameId.FirstOrDefault<Games>();
+
+            var reviews = from d in db.Reviews
+                          where d.ID_Game == result.ID
+                          select d;
+
+            ReviewList.ItemsSource = reviews.ToList();
         }
     }
 }

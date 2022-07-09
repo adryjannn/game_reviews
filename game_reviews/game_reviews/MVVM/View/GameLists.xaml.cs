@@ -28,6 +28,8 @@ namespace game_reviews.MVVM.View
                         select d;
 
             gameList.ItemsSource = games.ToList();
+            
+            //Console.WriteLine(((MenuWindow)Application.Current.MainWindow).UserIdText.ToString());
         }
     }
 }

@@ -58,16 +58,38 @@
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding ReviewViewCommand}"/>
-                
+
+                <RadioButton Content="Add review"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding AddReviewViewCommand}"/>
+
+                <RadioButton Content="Show review"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding AddReviewViewCommand}"/>
+
+                <RadioButton Content="Show your review"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding AddReviewViewCommand}"/>
+
             </StackPanel>
             
-            <TextBlock Grid.Column="1" Text="Zalogowany użytkownik,  jakiś tekst lub img - nie mam pomysłu"
+            <TextBlock Grid.Column="1"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontSize="15"
                        FontWeight="Black"
                        Foreground="Aquamarine"
-                       FontFamily="/Fonts/#Poppins"/>
+                       FontFamily="/Fonts/#Poppins" Name="UserIdText"/>
+            
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"

@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using game_reviews.MVVM.ViewModel;
 namespace game_reviews
 {
     /// <summary>
@@ -23,9 +23,11 @@ namespace game_reviews
         public MenuWindow(int userID)
         {
             InitializeComponent();
-            UserID = userID;   
+            this.UserID = userID;
+            UserIdText.Text = userID.ToString();
         }
 
+       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
            
@@ -34,7 +36,7 @@ namespace game_reviews
 
         private void MainMenuWindow_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
         {
-
+          
         }
 
     }

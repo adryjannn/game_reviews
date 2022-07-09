@@ -80,10 +80,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\ViewModel\AddReviewModel.cs" />
     <Compile Include="MVVM\ViewModel\GameListsModel.cs" />
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ReviewViewModel.cs" />
+    <Compile Include="MVVM\View\AddReviewView.xaml.cs">
+      <DependentUpon>AddReviewView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\GameLists.xaml.cs">
       <DependentUpon>GameLists.xaml</DependentUpon>
     </Compile>
@@ -115,6 +119,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\AddReviewView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

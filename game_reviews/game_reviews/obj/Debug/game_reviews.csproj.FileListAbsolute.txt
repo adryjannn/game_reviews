@@ -22,10 +22,6 @@ C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\ga
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.CopyComplete
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MenuWindow.g.cs
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MenuWindow.baml
-C:\Users\Adrian\Source\Repos\game_reviews\game_reviews\game_reviews\obj\Debug\AddGame.g.cs
-C:\Users\Adrian\Source\Repos\game_reviews\game_reviews\game_reviews\obj\Debug\GameList.g.cs
-C:\Users\Adrian\Source\Repos\game_reviews\game_reviews\game_reviews\obj\Debug\AddGame.baml
-C:\Users\Adrian\Source\Repos\game_reviews\game_reviews\game_reviews\obj\Debug\GameList.baml
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\bin\Debug\game_reviews.exe.config
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\bin\Debug\game_reviews.exe
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\bin\Debug\game_reviews.pdb
@@ -57,3 +53,14 @@ C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\o
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameLists.baml
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ReviewView.g.cs
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ReviewView.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameLists.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ReviewView.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\App.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameLists.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\HomeView.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ReviewView.baml
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\AddReviewView.g.cs
+C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\AddReviewView.baml
