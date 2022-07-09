@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace game_reviews
+namespace game_reviews.MVVM.View
 {
     /// <summary>
-    /// Logika interakcji dla klasy AddGame.xaml
+    /// Logika interakcji dla klasy ReviewView.xaml
     /// </summary>
-    public partial class AddGame : Page
+    public partial class ReviewView : UserControl
     {
-        public AddGame()
+        public ReviewView()
         {
             InitializeComponent();
         }
