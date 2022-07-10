@@ -24,7 +24,16 @@
 
             <Grid>
 
-                <ComboBox Margin="230,90,230,287" x:Name="selectGameCBox" BorderBrush="#FF020202" SelectedValuePath="Id" DisplayMemberPath="Value" FontFamily="/game_reviews;component/Fonts/#Poppins">
+                <ComboBox Margin="430,123,230,200" x:Name="selectGradeCBox" BorderBrush="#FF020202" FontFamily="/game_reviews;component/Fonts/#Poppins">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFF13B3B" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+
+                <ComboBox Margin="230,85,230,292" x:Name="selectGameCBox" BorderBrush="#FF020202" SelectedValuePath="Id" DisplayMemberPath="Value" FontFamily="/game_reviews;component/Fonts/#Poppins">
                     <ComboBox.Background>
                         <LinearGradientBrush EndPoint="0,1">
                             <GradientStop Color="#FFF0F0F0"/>
@@ -32,12 +41,13 @@
                         </LinearGradientBrush>
                     </ComboBox.Background>
                 </ComboBox>
-                <TextBox  x:Name="gameReviewGrade" Text="grade" Margin="430,123,230,199" FontFamily="/game_reviews;component/Fonts/#Poppins" Background="#272533"  Foreground="Aquamarine" TextAlignment="Center"/>
+
                 <TextBox  x:Name="gameReviewContent" Text="comment" RenderTransformOrigin="-1.25,1.281" Margin="230,123,275,199" FontFamily="/game_reviews;component/Fonts/#Poppins" Background="#272533" Foreground="Aquamarine" TextAlignment="Center"/>
                 <Button x:Name="btnSubmit" Content="Add" Click="btnAddReview_Click" Height="30" Margin="230,218,230,152" Background="#272533" Foreground="Aquamarine" FontFamily="/game_reviews;component/Fonts/#Poppins" 
                         FontSize="13"/>
                 <Image Source="/Images/ps.png" Margin="252,248,230,-20"/>
 
+                
 
             </Grid>
 

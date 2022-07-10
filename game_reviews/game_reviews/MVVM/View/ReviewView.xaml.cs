@@ -50,8 +50,15 @@ namespace game_reviews.MVVM.View
             var result = gameId.FirstOrDefault<Games>();
 
             var reviews = from d in db.Reviews
-                          where d.ID_Game == result.ID
-                          select d;
+                          from u in db.Users
+                          where d.ID_Game == result.ID && d.ID_User == u.ID
+                          select new 
+                          {
+                              User = u.login,
+                              Comment = d.Comment,
+                              Grade = d.Rating,
+                          };
+
 
             ReviewList.ItemsSource = reviews.ToList();
         }

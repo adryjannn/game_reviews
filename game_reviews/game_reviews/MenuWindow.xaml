@@ -79,9 +79,9 @@
             <TextBlock Grid.Column="1"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       FontSize="15"
+                       FontSize="1"
                        FontWeight="Black"
-                       Foreground="Aquamarine"
+                       Foreground="#272533"
                        FontFamily="/Fonts/#Poppins" Name="UserIdText"/>
             
 

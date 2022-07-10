@@ -29,6 +29,7 @@ namespace game_reviews.MVVM.View
             var games = from d in db.Games
                         select d;
             List<ComboData> ListData = new List<ComboData>();
+            IList<int> reviewGrade = new List<int>();
             foreach (var game in games)
             {
                 ComboData data = new ComboData();
@@ -37,8 +38,13 @@ namespace game_reviews.MVVM.View
                 ListData.Add(data);
             }
 
-            selectGameCBox.ItemsSource = ListData;
-            
+            for (int i = 1; i <= 10; i++)
+            {
+                reviewGrade.Add(i);
+            }
+
+                selectGameCBox.ItemsSource = ListData;
+                selectGradeCBox.ItemsSource = reviewGrade;
            
             
            // this.DataContext = games;
@@ -48,10 +54,19 @@ namespace game_reviews.MVVM.View
 
         private void btnAddReview_Click(object sender, RoutedEventArgs e)
         {
-            var game = selectGameCBox.Text;
-            var gameGrade = gameReviewGrade.Text;
-            var reviewContent = gameReviewContent.Text;
+            string game = selectGameCBox.Text;
+            string gameGrade = selectGradeCBox.Text;
+            string reviewContent = gameReviewContent.Text;
             string UserId = "";
+
+
+            if (game == "" || gameGrade == "" || reviewContent == "")
+            {
+                MessageBox.Show("input cannot be empty");
+                return;
+            }
+           
+
             foreach (Window window in Application.Current.Windows)
             {
                 if (window.GetType() == typeof(MenuWindow))
@@ -75,7 +90,19 @@ namespace game_reviews.MVVM.View
             review.Comment = reviewContent;
             review.ID_Game = result.ID;
             db.Reviews.Add(review);
-            db.SaveChanges();
+
+            try
+            {
+                db.SaveChanges();
+                MessageBox.Show("Sucessfully added review");
+                selectGameCBox.Text = "";
+                selectGradeCBox.Text = "";
+                gameReviewContent.Text = "";
+            } catch
+            {
+                MessageBox.Show("Incorrect data");
+            }
+            
         }
     }
 
