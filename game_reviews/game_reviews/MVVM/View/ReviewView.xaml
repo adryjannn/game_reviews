@@ -6,30 +6,57 @@
              xmlns:local="clr-namespace:game_reviews.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="Review" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" Foreground="Aquamarine" Margin="0,27,0,0"></TextBlock>
-        <ComboBox Margin="60,114,400,316" Name="selectGameCBox" BorderBrush="#FF842121" SelectedValuePath="Id" DisplayMemberPath="Value">
 
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1">
-                    <GradientStop Color="#FFF0F0F0"/>
-                    <GradientStop Color="#FFC71C1C" Offset="1"/>
+    <StackPanel VerticalAlignment="Center">
+        <TextBlock Text="Check what users thinks about game" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="Aquamarine" Margin="0,27,0,0" FontFamily="/game_reviews;component/Fonts/#Poppins"></TextBlock>
+        <Border Height="400" Width="700" Margin="0,0,0,20">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                    <GradientStop Color="#272533" Offset="0.1"/>
+                    <GradientStop Color="White" Offset="1.3"/>
                 </LinearGradientBrush>
-            </ComboBox.Background>
-        </ComboBox>
-        <Button Content="Select game" Margin="60,151,400,257" Click="selectGameBtn_Click"/>
-        <DataGrid x:Name="ReviewList" HorizontalAlignment="Center"
-            Height="215"
-            Margin="0,198,0,0"
-            VerticalAlignment="Top"
-            Width="680"
-            FrozenColumnCount="4"
-            SelectionMode="Single" 
-            AlternatingRowBackground="#576E66"
-            HorizontalScrollBarVisibility="Disabled"
-            VerticalScrollBarVisibility="Auto"
-            MinColumnWidth="100"
-            IsReadOnly="True"
-                  Background="#1d3959"/>
-    </Grid>
+            </Border.Background>
+            <Border.Clip>
+                <RectangleGeometry RadiusX="13"
+                                       RadiusY="13"
+                                       Rect="0,0,700,400"/>
+            </Border.Clip>
+
+
+            <Grid>
+
+                <ComboBox Margin="10,105,450,270" Name="selectGameCBox" BorderBrush="Black" SelectedValuePath="Id" DisplayMemberPath="Value" Height="25" FontFamily="/game_reviews;component/Fonts/#Poppins" Foreground="Black">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFBC27C7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Button Content="Select game"  Click="selectGameBtn_Click" Width="130" Margin="266,105,304,270" Background="#272533" Foreground="Aquamarine" FontFamily="/game_reviews;component/Fonts/#Poppins" 
+                        FontSize="13"/>
+
+                <DataGrid x:Name="ReviewList" HorizontalAlignment="Center"
+                    Height="200"
+                    VerticalAlignment="Bottom"
+                    BorderThickness="0"
+                    Margin="0,0,0,40"
+                    Width="680"
+                    FrozenColumnCount="4"
+                    SelectionMode="Single"
+                    HorizontalScrollBarVisibility="Disabled"
+                    VerticalScrollBarVisibility="Auto"
+                    MinColumnWidth="100"
+                    IsReadOnly="True"
+                     Background="#272533" FontFamily="/game_reviews;component/Fonts/#Poppins" FontSize="14"/>
+
+            </Grid>
+
+
+
+
+        </Border>
+
+    </StackPanel>
+
 </UserControl>

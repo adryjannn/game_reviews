@@ -27,7 +27,11 @@
                 <view:AddReviewView/>
             </DataTemplate>
 
-            
+            <DataTemplate DataType="{x:Type ViewModel:ShowReviewModel}">
+                <view:ShowReviewView/>
+            </DataTemplate>
+
+
 
         </ResourceDictionary>
     </Application.Resources>

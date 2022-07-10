@@ -85,6 +85,7 @@
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ReviewViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ShowReviewModel.cs" />
     <Compile Include="MVVM\View\AddReviewView.xaml.cs">
       <DependentUpon>AddReviewView.xaml</DependentUpon>
     </Compile>
@@ -96,6 +97,9 @@
     </Compile>
     <Compile Include="MVVM\View\ReviewView.xaml.cs">
       <DependentUpon>ReviewView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\ShowReviewView.xaml.cs">
+      <DependentUpon>ShowReviewView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Producers.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -135,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\ReviewView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ShowReviewView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,6 +202,7 @@
     <Resource Include="Images\banner.png" />
     <Resource Include="Images\gry.jpeg" />
     <Resource Include="Images\email.png" />
+    <Resource Include="Images\ps.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

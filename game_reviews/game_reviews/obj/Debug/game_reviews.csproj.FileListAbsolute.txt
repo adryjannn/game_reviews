@@ -64,3 +64,7 @@ C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MV
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ReviewView.baml
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\AddReviewView.g.cs
 C:\Users\Adrian\source\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\AddReviewView.baml
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\AddReviewView.g.cs
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\AddReviewView.baml
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ShowReviewView.g.cs
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\ShowReviewView.baml
