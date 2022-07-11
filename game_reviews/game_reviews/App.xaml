@@ -31,6 +31,10 @@
                 <view:ShowReviewView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type ViewModel:GameRankingModel}">
+                <view:GameRankingView/>
+            </DataTemplate>
+
 
 
         </ResourceDictionary>

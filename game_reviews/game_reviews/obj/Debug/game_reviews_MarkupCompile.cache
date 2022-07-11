@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\
 game_reviews
 none
 false
 DEBUG;TRACE
-C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\App.xaml
-8-445258534
-2-1957146511
-27135673740
-18-1634763177
-MainWindow.xaml;MenuWindow.xaml;MVVM\View\AddReviewView.xaml;MVVM\View\GameLists.xaml;MVVM\View\HomeView.xaml;MVVM\View\ReviewView.xaml;MVVM\View\ShowReviewView.xaml;Theme\MenuButtonTheme.xaml;
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\App.xaml
+91130666934
+21750853300
+29703608089
+18812618763
+MainWindow.xaml;MenuWindow.xaml;MVVM\View\AddReviewView.xaml;MVVM\View\GameLists.xaml;MVVM\View\GameRankingView.xaml;MVVM\View\HomeView.xaml;MVVM\View\ReviewView.xaml;MVVM\View\ShowReviewView.xaml;Theme\MenuButtonTheme.xaml;
 
 False
 

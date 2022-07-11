@@ -73,6 +73,13 @@
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding ShowReviewViewCommand}"/>
+                
+                <RadioButton Content="Game Ranking"
+                             Height="55"
+                             Foreground="Aquamarine"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                              Command="{Binding GameRankingViewCommand}"/>
 
             </StackPanel>
             

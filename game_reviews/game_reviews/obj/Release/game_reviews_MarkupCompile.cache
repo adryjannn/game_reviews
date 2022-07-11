@@ -10,11 +10,11 @@ none
 false
 TRACE
 C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\App.xaml
-8579321034
+91130666934
 21750853300
-27-1494817688
+29703608089
 18812618763
-MainWindow.xaml;MenuWindow.xaml;MVVM\View\AddReviewView.xaml;MVVM\View\GameLists.xaml;MVVM\View\HomeView.xaml;MVVM\View\ReviewView.xaml;MVVM\View\ShowReviewView.xaml;Theme\MenuButtonTheme.xaml;
+MainWindow.xaml;MenuWindow.xaml;MVVM\View\AddReviewView.xaml;MVVM\View\GameLists.xaml;MVVM\View\GameRankingView.xaml;MVVM\View\HomeView.xaml;MVVM\View\ReviewView.xaml;MVVM\View\ShowReviewView.xaml;Theme\MenuButtonTheme.xaml;
 
 True
 
