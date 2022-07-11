@@ -24,12 +24,27 @@ namespace game_reviews.MVVM.View
         {
             InitializeComponent();
             GameReviewsEntities db = new GameReviewsEntities();
+            
+
             var games = from d in db.Games
-                        select d;
+                        from p in db.Producers
+                        from c in db.Categories
+                        where d.ID_producer == p.ID && d.ID_category == c.ID
+                        select new
+                        {
+                            Id = d.ID,
+                            Title = d.Title,
+                            Producer = p.Name,
+                            Categorie = c.Categories1,
+                                
+                        };
 
             gameList.ItemsSource = games.ToList();
-            
+
             //Console.WriteLine(((MenuWindow)Application.Current.MainWindow).UserIdText.ToString());
+
+
+           
         }
     }
 }

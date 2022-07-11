@@ -105,3 +105,5 @@ C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\g
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.CopyComplete
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.exe
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.pdb
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameRankingView.g.cs
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameRankingView.baml

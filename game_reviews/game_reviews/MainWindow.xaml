@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:game_reviews"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Border Background="#2e3137" CornerRadius="20" Margin="20" >
+        Title="MainWindow" Height="450" Width="800"
+        Background="Transparent">
+    <Border Background="#272533" CornerRadius="20" Margin="20" >
         <StackPanel Margin="20">
-            <Label Content="Logowanie" Foreground="White" FontSize="30" HorizontalAlignment="Center"></Label>
+            <Label Content="Logowanie" Foreground="Aquamarine" FontSize="30" HorizontalAlignment="Center" FontFamily="/game_reviews;component/Fonts/#Poppins"></Label>
             <Separator></Separator>
-            <Label Content="Login" Foreground="White" FontSize="24"></Label>
-            <TextBox Name="username" Background="#545d6a" Foreground="White" FontSize="24"></TextBox>
-            <Label Content="Hasło" Foreground="White" FontSize="24"></Label>
-            <PasswordBox Name="password" Background="#545d6a" Foreground="White" FontSize="24"></PasswordBox>
-            <Button Name="btnSubmit" Content="Login" Click="btnSubmitLogin_Click" Background="#545d6a" Foreground="White" FontSize="25" Margin="190 40"></Button>
+            <Label Content="Login" Foreground="Aquamarine" FontSize="24" FontFamily="/game_reviews;component/Fonts/#Poppins"></Label>
+            <TextBox Name="username" Background="#545d6a" Foreground="Aquamarine" FontSize="24" FontFamily="/game_reviews;component/Fonts/#Poppins"></TextBox>
+            <Label Content="Hasło" Foreground="Aquamarine" FontSize="24" FontFamily="/game_reviews;component/Fonts/#Poppins"></Label>
+            <PasswordBox Name="password" Background="#545d6a" Foreground="Aquamarine" FontSize="24"></PasswordBox>
+            <Button Name="btnSubmit" Content="Login" Click="btnSubmitLogin_Click" Background="#545d6a" Foreground="Aquamarine" FontSize="25" Margin="190 40" FontFamily="/game_reviews;component/Fonts/#Poppins"></Button>
         </StackPanel>
     </Border>
 </Window>
