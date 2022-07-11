@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:game_reviews.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
     <StackPanel VerticalAlignment="Center">
         <Border Height="400" Width="700"   >
             <Border.Background>
@@ -20,7 +20,7 @@
                                        RadiusY="13"
                                        Rect="0,0,700,400"/>
             </Border.Clip>
-           
+
 
             <Grid>
                 <DataGrid x:Name="gameList" HorizontalAlignment="Center"
@@ -36,23 +36,11 @@
                     IsReadOnly="True"
                     Foreground="#FFCFCFCF"
                     RowBackground="#272533"
-                    VerticalGridLinesBrush="Aquamarine"
-                    
-                          
-                          
-                    
+                    VerticalGridLinesBrush="Aquamarine" 
                     FontFamily="/game_reviews;component/Fonts/#Poppins"
                     Background="#FF242230" AreRowDetailsFrozen="True" BorderBrush="#272533" GridLinesVisibility="Vertical"
                           />
-                
-
             </Grid>
-
-
-
-
         </Border>
-
     </StackPanel>
-
 </UserControl>

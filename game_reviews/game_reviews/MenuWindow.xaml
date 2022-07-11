@@ -15,7 +15,7 @@
     <Window.DataContext>
         <ViewModel:MainViewModel/>
     </Window.DataContext>
-    
+
     <Border Background="#272533"
             CornerRadius="15">
         <Grid>
@@ -26,9 +26,20 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
 
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Button Content="logout" Grid.Column="1" Click="ButtonLogout_Click" Margin="631,0,5,7" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0"/>
+                        <RotateTransform Angle="-0.408"/>
+                        <TranslateTransform Y="0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
             <TextBlock Text="GamesReviews"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
@@ -44,14 +55,14 @@
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
-                
+
                 <RadioButton Content="Game List"
                              Height="55"
                              Foreground="Aquamarine"
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding GameListsCommand}"/>
-                
+
                 <RadioButton Content="Reviews"
                              Height="55"
                              Foreground="Aquamarine"
@@ -73,7 +84,7 @@
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding ShowReviewViewCommand}"/>
-                
+
                 <RadioButton Content="Game Ranking"
                              Height="55"
                              Foreground="Aquamarine"
@@ -82,7 +93,7 @@
                               Command="{Binding GameRankingViewCommand}"/>
 
             </StackPanel>
-            
+
             <TextBlock Grid.Column="1"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
@@ -90,19 +101,19 @@
                        FontWeight="Black"
                        Foreground="#272533"
                        FontFamily="/Fonts/#Poppins" Name="UserIdText"/>
-            
+
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
                             Margin="10"
                             Content="{Binding CurrentView}">
-               
+
             </ContentControl>
         </Grid>
 
-        
-        
+
+
     </Border>
-    
-   
+
+
 </Window>

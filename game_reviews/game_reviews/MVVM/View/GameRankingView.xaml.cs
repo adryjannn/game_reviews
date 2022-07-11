@@ -23,6 +23,23 @@ namespace game_reviews.MVVM.View
         public GameRankingView()
         {
             InitializeComponent();
+            GameReviewsEntities db = new GameReviewsEntities();
+
+
+            var games = from d in db.Games
+                        from p in db.Producers
+                        from c in db.Categories
+                        from r in db.Reviews
+                        where d.ID_producer == p.ID && d.ID_category == c.ID
+                        select new
+                        {
+                            Id = d.ID,
+                            Title = d.Title,
+                            Producer = p.Name,
+                            Categorie = c.Categories1,
+                        };
+
+            RankgameList.ItemsSource = games.ToList();
         }
     }
 }

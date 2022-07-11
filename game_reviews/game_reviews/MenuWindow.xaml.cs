@@ -39,5 +39,11 @@ namespace game_reviews
           
         }
 
+        private void ButtonLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
     }
 }

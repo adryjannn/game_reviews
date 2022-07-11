@@ -33,23 +33,42 @@ namespace game_reviews.MVVM.View
                 }
             }
 
-            if (UserId !=0)
+            if (UserId != 0)
             {
                 GameReviewsEntities db = new GameReviewsEntities();
                 var reviews = from r in db.Reviews
-                            from u in db.Users
-                            from g in db.Games
-                            where r.ID_User == u.ID && r.ID_Game == g.ID && u.ID == UserId
-                            select new
-                            {
-                                Game = g.Title,
-                                Comment = r.Comment,
-                                Grade = r.Rating
-                            };
+                              from u in db.Users
+                              from g in db.Games
+                              where r.ID_User == u.ID && r.ID_Game == g.ID && u.ID == UserId
+                              select new
+                              {
+                                  Id = r.ID,
+                                  Game = g.Title,
+                                  Comment = r.Comment,
+                                  Grade = r.Rating
+                              };
 
                 UserReviewList.ItemsSource = reviews.ToList();
-              
             }
+        }
+
+        private void ModifyComment_Click(object sender, RoutedEventArgs e)
+        {
+            string t = UserReviewList.SelectedItem.ToString();
+            Console.WriteLine(t);
+            string id = "";
+            for (int i = 7; i < t.Length; i++)
+            {
+                if (t[i] == ',')
+                {
+                    break;
+                }
+                id += t[i];
+
+            }
+
+            UpdateReviewWindow updateReviewWindow = new UpdateReviewWindow(Int32.Parse(id));
+            updateReviewWindow.ShowDialog();
         }
     }
 }

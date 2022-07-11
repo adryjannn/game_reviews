@@ -36,13 +36,20 @@
                     Foreground="#FFCFCFCF"
                     RowBackground="#272533"
                     VerticalGridLinesBrush="Aquamarine"
-                    
-                          
-                          
-                    
                     FontFamily="/game_reviews;component/Fonts/#Poppins"
-                    Background="#FF242230" AreRowDetailsFrozen="True" BorderBrush="#272533" GridLinesVisibility="Vertical"
-                          />
+                    Background="#FF242230" AreRowDetailsFrozen="True" BorderBrush="#272533" GridLinesVisibility="Vertical" >
+
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="ModifyComment_Click" Name="ModifyComment">Show/Hide</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+
+                </DataGrid>
 
 
             </Grid>

@@ -28,11 +28,8 @@ namespace game_reviews
 
         private void btnSubmitLogin_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(password.Password.ToString());
-            Console.WriteLine(username.Text);
             GameReviewsEntities db = new GameReviewsEntities();
             
-
             var users = from d in db.Users
                         where d.login == username.Text && d.password == password.Password
                         select d;
@@ -53,6 +50,13 @@ namespace game_reviews
             }
             
 
+        }
+
+        private void btnSubmitRegister_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.Show();
+            this.Close();
         }
     }
 }

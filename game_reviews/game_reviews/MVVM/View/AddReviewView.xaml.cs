@@ -83,7 +83,6 @@ namespace game_reviews.MVVM.View
             var result = gameId.FirstOrDefault<Games>();
 
 
-            Console.WriteLine(result.ID);
             var review = new Reviews();
             review.ID_User = Int32.Parse(UserId);
             review.Rating = Int32.Parse(gameGrade);
