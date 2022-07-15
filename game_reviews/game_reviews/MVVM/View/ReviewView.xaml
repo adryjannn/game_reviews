@@ -27,9 +27,9 @@
 
                 <ComboBox Margin="10,105,450,270" Name="selectGameCBox" BorderBrush="Black" SelectedValuePath="Id" DisplayMemberPath="Value" Height="25" FontFamily="/game_reviews;component/Fonts/#Poppins" Foreground="Black">
                     <ComboBox.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FFBC27C7" Offset="1"/>
+                        <LinearGradientBrush EndPoint="0,3" StartPoint="1,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="Yellow" Offset="1"/>
                         </LinearGradientBrush>
                     </ComboBox.Background>
                 </ComboBox>
@@ -48,7 +48,10 @@
                     VerticalScrollBarVisibility="Auto"
                     MinColumnWidth="100"
                     IsReadOnly="True"
-                     Background="#272533" FontFamily="/game_reviews;component/Fonts/#Poppins" FontSize="14"/>
+                         Foreground="#FFCFCFCF"
+                           VerticalGridLinesBrush="Aquamarine" 
+                    RowBackground="#272533"
+                     Background="#272533" FontFamily="/game_reviews;component/Fonts/#Poppins" FontSize="16"/>
 
             </Grid>
 

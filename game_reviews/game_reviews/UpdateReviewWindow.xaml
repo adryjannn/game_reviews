@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:game_reviews"
         mc:Ignorable="d"
-        Title="UpdateReviewWindow" Height="450" Width="800">
+        Title="UpdateReviewWindow" Height="450" Width="800"
+        Background="#272533">
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="Leave your opinion about game" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="Aquamarine" Margin="0,27,0,0" FontFamily="/game_reviews;component/Fonts/#Poppins"></TextBlock>
+           
             <Border Height="400" Width="700" >
+                
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#272533" Offset="0.1"/>
@@ -24,14 +26,10 @@
 
 
                 <Grid>
+                    <TextBlock Text="Change your review" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="Aquamarine" Margin="0,27,0,0" FontFamily="/game_reviews;component/Fonts/#Poppins"></TextBlock>
 
-                    <ComboBox Margin="430,123,230,200" x:Name="selectGradeCBox" BorderBrush="#FF020202" FontFamily="/game_reviews;component/Fonts/#Poppins">
-                        <ComboBox.Background>
-                            <LinearGradientBrush EndPoint="0,1">
-                                <GradientStop Color="#FFF0F0F0"/>
-                                <GradientStop Color="#FFF13B3B" Offset="1"/>
-                            </LinearGradientBrush>
-                        </ComboBox.Background>
+                    <ComboBox Margin="430,123,230,200" x:Name="selectGradeCBox" BorderBrush="#FF020202" FontFamily="/game_reviews;component/Fonts/#Poppins" Background="Black">
+                        
                     </ComboBox>
 
                     <TextBox  x:Name="gameReviewContent" Text="comment" RenderTransformOrigin="-1.25,1.281" Margin="230,123,275,199" FontFamily="/game_reviews;component/Fonts/#Poppins" Background="#272533" Foreground="Aquamarine" TextAlignment="Center"/>

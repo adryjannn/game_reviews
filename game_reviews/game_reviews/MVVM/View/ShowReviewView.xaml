@@ -31,7 +31,8 @@
                     SelectionMode="Single"
                     HorizontalScrollBarVisibility="Auto"
                     VerticalScrollBarVisibility="Auto"
-                    MinColumnWidth="80"
+                    MinColumnWidth="85"
+                          FontSize="14"
                     IsReadOnly="True"
                     Foreground="#FFCFCFCF"
                     RowBackground="#272533"
@@ -43,7 +44,7 @@
                         <DataGridTemplateColumn>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <Button Click="ModifyComment_Click" Name="ModifyComment">Show/Hide</Button>
+                                    <Button Click="ModifyComment_Click" Name="ModifyComment" Background="#272533" Foreground="Aquamarine" FontFamily="/game_reviews;component/Fonts/#Poppins" BorderBrush="Aquamarine">Modify</Button>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>

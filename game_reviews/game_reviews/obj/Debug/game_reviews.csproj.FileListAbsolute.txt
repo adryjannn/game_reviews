@@ -105,11 +105,13 @@ C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\g
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.csproj.CopyComplete
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.exe
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\game_reviews.pdb
-C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameRankingView.g.cs
-C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameRankingView.baml
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameRankingView.g.cs
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\MVVM\View\GameRankingView.baml
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\RegisterWindow.g.cs
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\RegisterWindow.baml
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\UpdateReviewWindow.g.cs
 C:\Users\Adrian\Desktop\repos\game_reviews\game_reviews\game_reviews\obj\Debug\UpdateReviewWindow.baml
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\RegisterWindow.g.cs
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\UpdateReviewWindow.g.cs
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\RegisterWindow.baml
+C:\Users\Tomek\Source\Repos\Chmielovsky\game_reviews\game_reviews\game_reviews\obj\Debug\UpdateReviewWindow.baml

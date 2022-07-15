@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\game_reviews",
+    "\\game_reviews\\game_reviews",
+    "\\game_reviews\\game_reviews\\MVVM",
+    "\\game_reviews\\game_reviews\\MVVM\\View"
   ],
-  "SelectedNode": "\\game_reviews.sln",
+  "SelectedNode": "\\game_reviews\\game_reviews\\MVVM\\View\\GameLists.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

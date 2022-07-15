@@ -82,7 +82,6 @@
     </Compile>
     <Compile Include="MVVM\ViewModel\AddReviewModel.cs" />
     <Compile Include="MVVM\ViewModel\GameListsModel.cs" />
-    <Compile Include="MVVM\ViewModel\GameRankingModel.cs" />
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ReviewViewModel.cs" />
@@ -92,9 +91,6 @@
     </Compile>
     <Compile Include="MVVM\View\GameLists.xaml.cs">
       <DependentUpon>GameLists.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MVVM\View\GameRankingView.xaml.cs">
-      <DependentUpon>GameRankingView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
@@ -141,10 +137,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\GameLists.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MVVM\View\GameRankingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

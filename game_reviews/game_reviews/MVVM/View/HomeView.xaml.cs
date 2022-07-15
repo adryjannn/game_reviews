@@ -25,9 +25,6 @@ namespace game_reviews.MVVM.View
             InitializeComponent();
         }
 
-        private void Testbox_click(object sender, RoutedEventArgs e)
-        {
-           
-        }
+        
     }
 }
