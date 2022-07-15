@@ -19,7 +19,15 @@ namespace game_reviews
     /// </summary>
     public partial class UpdateReviewWindow : Window
     {
+        /// <summary>
+        /// Id review to update
+        /// </summary>
+        
         public int IdReview;
+
+        /// <summary>
+        /// Create form update review
+        /// </summary>
         public UpdateReviewWindow(int id)
         {
             InitializeComponent();
@@ -37,6 +45,9 @@ namespace game_reviews
             selectGradeCBox.ItemsSource = reviewGrade;
         }
 
+        /// <summary>
+        /// Update review
+        /// </summary>
         private void btnUpdateReview_Click(object sender, RoutedEventArgs e)
         {
             GameReviewsEntities db = new GameReviewsEntities();

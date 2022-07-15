@@ -20,6 +20,9 @@ namespace game_reviews.MVVM.View
     /// </summary>
     public partial class ReviewView : UserControl
     {
+        /// <summary>
+        /// Craete view with simple form to select game
+        /// </summary>
         public ReviewView()
         {
             InitializeComponent();
@@ -38,6 +41,9 @@ namespace game_reviews.MVVM.View
             selectGameCBox.ItemsSource = ListData;
         }
 
+        /// <summary>
+        /// Create view with reviews list by game
+        /// </summary>
         private void selectGameBtn_Click(object sender, RoutedEventArgs e)
         {
             var game = selectGameCBox.Text;

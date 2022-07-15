@@ -20,7 +20,10 @@ namespace game_reviews.MVVM.View
     /// </summary>
     public partial class AddReviewView : UserControl
     {
-        
+
+        /// <summary>
+        /// Create form for add game review
+        /// </summary>
         public AddReviewView()
         {
             InitializeComponent();
@@ -44,14 +47,12 @@ namespace game_reviews.MVVM.View
             }
 
                 selectGameCBox.ItemsSource = ListData;
-                selectGradeCBox.ItemsSource = reviewGrade;
-           
-            
-           // this.DataContext = games;
-           
-            
+                selectGradeCBox.ItemsSource = reviewGrade;    
         }
 
+        /// <summary>
+        /// Add review by button click
+        /// </summary>
         private void btnAddReview_Click(object sender, RoutedEventArgs e)
         {
             string game = selectGameCBox.Text;
@@ -92,6 +93,7 @@ namespace game_reviews.MVVM.View
 
             try
             {
+                //Clean data in form
                 db.SaveChanges();
                 MessageBox.Show("Sucessfully added review");
                 selectGameCBox.Text = "";
@@ -105,6 +107,9 @@ namespace game_reviews.MVVM.View
         }
     }
 
+    /// <summary>
+    /// Class for combobox with games data 
+    /// </summary>
     public class ComboData
     {
         public int Id { get; set; }

@@ -20,6 +20,9 @@ namespace game_reviews.MVVM.View
     /// </summary>
     public partial class HomeView : UserControl
     {
+        /// <summary>
+        /// Create home view
+        /// </summary>
         public HomeView()
         {
             InitializeComponent();

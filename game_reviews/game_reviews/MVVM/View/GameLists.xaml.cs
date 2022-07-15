@@ -20,11 +20,13 @@ namespace game_reviews.MVVM.View
     /// </summary>
     public partial class GameLists : UserControl
     {
+        /// <summary>
+        /// Create view with game list
+        /// </summary>
         public GameLists()
         {
             InitializeComponent();
             GameReviewsEntities db = new GameReviewsEntities();
-            
 
             var games = from d in db.Games
                         from p in db.Producers
@@ -40,11 +42,6 @@ namespace game_reviews.MVVM.View
                         };
 
             gameList.ItemsSource = games.ToList();
-
-            //Console.WriteLine(((MenuWindow)Application.Current.MainWindow).UserIdText.ToString());
-
-
-           
         }
     }
 }

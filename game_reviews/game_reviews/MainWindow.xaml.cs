@@ -20,12 +20,17 @@ namespace game_reviews
     /// </summary>
     public partial class MainWindow : Window
     {
-       
+        /// <summary>
+        /// Create form to login
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Login user
+        /// </summary>
         private void btnSubmitLogin_Click(object sender, RoutedEventArgs e)
         {
             GameReviewsEntities db = new GameReviewsEntities();
@@ -52,6 +57,9 @@ namespace game_reviews
 
         }
 
+        /// <summary>
+        /// Open window to register user
+        /// </summary>
         private void btnSubmitRegister_Click(object sender, RoutedEventArgs e)
         {
             RegisterWindow registerWindow = new RegisterWindow();

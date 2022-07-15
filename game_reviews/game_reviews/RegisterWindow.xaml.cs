@@ -19,11 +19,17 @@ namespace game_reviews
     /// </summary>
     public partial class RegisterWindow : Window
     {
+        /// <summary>
+        /// Create form to register
+        /// </summary>
         public RegisterWindow()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Register user
+        /// </summary>
         private void btnSubmitRegister_Click(object sender, RoutedEventArgs e)
         {
             

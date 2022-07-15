@@ -16,7 +16,7 @@
             <Label Content="Hasło" Foreground="Aquamarine" FontSize="24" FontFamily="/game_reviews;component/Fonts/#Poppins"></Label>
             <PasswordBox Name="password" Background="#545d6a" Foreground="Aquamarine" FontSize="24"></PasswordBox>
             <Button x:Name="btnSubmit" Content="Login" Click="btnSubmitLogin_Click" Background="#545d6a" Foreground="Aquamarine" FontSize="25" FontFamily="/game_reviews;component/Fonts/#Poppins" Width="340" Margin="0,10,0,10"/>
-            <Button Name="btnRegister" Content="Register" Click="btnSubmitRegister_Click" Background="#545d6a" Foreground="Aquamarine" FontSize="25" Margin="190 10" FontFamily="/game_reviews;component/Fonts/#Poppins"></Button>
+            <Button x:Name="btnRegister" Content="Register" Click="btnSubmitRegister_Click" Background="#545d6a" Foreground="Aquamarine" FontSize="25" Width="340" FontFamily="/game_reviews;component/Fonts/#Poppins"/>
         </StackPanel>
     </Border>
 </Window>

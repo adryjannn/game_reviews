@@ -20,6 +20,9 @@ namespace game_reviews.MVVM.View
     /// </summary>
     public partial class ShowReviewView : UserControl
     {
+        /// <summary>
+        /// Create view with reviews by user
+        /// </summary>
         public ShowReviewView()
         {
             int UserId = 0;
@@ -52,6 +55,9 @@ namespace game_reviews.MVVM.View
             }
         }
 
+        /// <summary>
+        /// Show window to update review
+        /// </summary>
         private void ModifyComment_Click(object sender, RoutedEventArgs e)
         {
             string t = UserReviewList.SelectedItem.ToString();
