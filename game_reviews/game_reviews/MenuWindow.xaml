@@ -30,7 +30,7 @@
                 <RowDefinition/>
 
             </Grid.RowDefinitions>
-            <Button Content="logout" Grid.Column="1" Click="ButtonLogout_Click" Margin="631,0,5,7" RenderTransformOrigin="0.5,0.5">
+            <Button Content="logout" Grid.Column="1" Click="ButtonLogout_Click" Margin="631,11,5,11" RenderTransformOrigin="0.5,0.5" Background="#272533" Foreground="Aquamarine" FontFamily="/game_reviews;component/Fonts/#Poppins" BorderBrush="Aquamarine">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -85,12 +85,7 @@
                              Style="{StaticResource MenuButtonTheme}"
                               Command="{Binding ShowReviewViewCommand}"/>
 
-                <RadioButton Content="Game Ranking"
-                             Height="55"
-                             Foreground="Aquamarine"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                              Command="{Binding GameRankingViewCommand}"/>
+               
 
             </StackPanel>
 

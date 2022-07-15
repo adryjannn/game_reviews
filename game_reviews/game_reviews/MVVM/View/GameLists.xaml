@@ -32,14 +32,16 @@
                     SelectionMode="Single"
                     HorizontalScrollBarVisibility="Auto"
                     VerticalScrollBarVisibility="Auto"
-                    MinColumnWidth="80"
+                    MinColumnWidth="85"
                     IsReadOnly="True"
                     Foreground="#FFCFCFCF"
                     RowBackground="#272533"
+                    FontSize="14"
                     VerticalGridLinesBrush="Aquamarine" 
                     FontFamily="/game_reviews;component/Fonts/#Poppins"
                     Background="#FF242230" AreRowDetailsFrozen="True" BorderBrush="#272533" GridLinesVisibility="Vertical"
                           />
+                
             </Grid>
         </Border>
     </StackPanel>
