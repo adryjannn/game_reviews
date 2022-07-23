@@ -71,7 +71,7 @@ Project is created with:
 - Po sklonowaniu repozytorium wchodzimy do katalogu instalatora : game_reviews/Setup1/Release
 - Uruchamiamy plik setup.exe
 - Po zakończonej instalacji wchodzimy do katalogu z zainstalowaną aplikacją i uruchamiamy plik game_reviews.exe.config
-- W tagu "<ConnectionStrings>" zmieniamy właściwość "data source=DESKTOP-O4L8475" na "data source=*Nazwa twojego serwera, na który importowałeś bazę danych*
+- W tagu "ConnectionStrings" zmieniamy właściwość "data source=DESKTOP-O4L8475" na "data source=*Nazwa twojego serwera, na który importowałeś bazę danych*"
 - Zapisujemy plik game_reviews.exe.config
 - Urchamaiamy plik game_reviews.exe
 
