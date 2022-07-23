@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Adrian\Desktop\gr\game_reviews\game_reviews\obj\Debug\
+C:\Users\Adrian\Desktop\ddd\dd\game_reviews\game_reviews\obj\Debug\
 game_reviews
 none
 false
 DEBUG;TRACE
-C:\Users\Adrian\Desktop\gr\game_reviews\game_reviews\App.xaml
+C:\Users\Adrian\Desktop\ddd\dd\game_reviews\game_reviews\App.xaml
 101647926682
 2-1957146511
 29-45408804
-181856237207
+18936599479
 MainWindow.xaml;MenuWindow.xaml;MVVM\View\AddReviewView.xaml;MVVM\View\GameLists.xaml;MVVM\View\HomeView.xaml;MVVM\View\ReviewView.xaml;MVVM\View\ShowReviewView.xaml;RegisterWindow.xaml;Theme\MenuButtonTheme.xaml;UpdateReviewWindow.xaml;
 
 False
